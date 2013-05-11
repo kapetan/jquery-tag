@@ -344,10 +344,16 @@
 		var select = $('<div></div>').addClass(n('select'));
 
 		for(var i = 0; i < opts.length; i++) {
+			var item = opts[i];
+
+			if(typeof item === 'string') {
+				item = { name: item, value: item };
+			}
+
 			var opt = $('<div></div>')
 				.addClass(n('option'))
-				.attr('data-value', opts[i].value)
-				.text(opts[i].name);
+				.attr('data-value', item.value)
+				.text(item.name);
 
 			select.append(opt);
 		}
