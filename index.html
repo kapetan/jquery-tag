@@ -12,8 +12,8 @@
 		}
 	</script>
 
-	<script type="text/javascript" src="editor.js"></script>
-	<script type="text/javascript" src="tag.js"></script>
+	<script type="text/javascript" src="lib/editor.js"></script>
+	<script type="text/javascript" src="lib/tag.js"></script>
 
 	<style type="text/css">
 		body {
@@ -27,12 +27,7 @@
 
 	<script type="text/javascript">
 		$(function() {
-			$('#tag-input').tag({
-				'That Guy': 'tg@mailer.com',
-				'The other guy': 'lol-at@gmail.com',
-				'Lady': 'hello@g.com',
-				'Test McTester': 'test@gmai.com'
-			});
+			$('#tag-input').tag(['Lady', 'That guy', 'The other guy', 'Test']);
 		});
 	</script>
 </head>
