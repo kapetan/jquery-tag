@@ -8,7 +8,7 @@ A jQuery plugin for creating tags in input fields.
 
 Call the `$.fn.tag` method to initialize a tag input field.
 
-```HTML
+```html
 <script type="text/javascript">
 	$(function() {
 		$('#tag-input').tag(['Lady', 'That guy', 'The other guy', 'Test']);
